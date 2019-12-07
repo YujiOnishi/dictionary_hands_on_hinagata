@@ -1,6 +1,6 @@
 # dictionary_hands_on
 
-このリポジトリは2020/1/29に開催されるFlutter Handson Osaka #1に利用します。
+このリポジトリはFlutter Handson Osakaに利用します。
 
 
 ## 機能概要
