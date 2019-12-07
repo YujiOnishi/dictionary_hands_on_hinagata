@@ -101,14 +101,9 @@ https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos
 ②以下コマンドを叩く
 
 ```
-cd ~/
-mkdir development
-cd ~/development
-unzip ~/Downloads/flutter_macos_v1.9.1+hotfix.6-stable.zip 
+mkdir ~/development
 ```
-
-※developmentフォルダが既にある方は3行目から叩いてください。
-
+先程のzipを解答してdevelopmentフォルダに移動
 
 
 #### 2,パスを通す
