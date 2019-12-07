@@ -121,7 +121,7 @@ vi ~/.bash_profile
 ②以下を追加
 
 ```
-export PATH="$PATH:[flutterフォルダをおいているフルパスに変更してください]/flutter/bin"
+export PATH="$PATH:/Users/[User名に置き換えて[]を削除]/development/flutter/bin"
 ```
 
 
