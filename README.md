@@ -261,8 +261,6 @@ Googleアナリティクスを有効にするにチェックを入れ続行を�
 
 ⑥以下の画像のように設定を登録。
 
-https://github.com/mono0926/panache/blob/master/docs/screenshot4.png)
-
 
 
 
