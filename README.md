@@ -1,6 +1,12 @@
 # dictionary_hands_on
 
-このリポジトリはFlutter Handson Osakaに利用します。
+このリポジトリは2020/1/29に開催されるFlutter Handson Osaka #1に利用します。
+
+
+
+[TOC]
+
+
 
 
 ## 機能概要
@@ -9,12 +15,20 @@
 
 
 
+## 開発環境に必要なもの一覧
+
+AndroidStudio…プログラムを書くために必要
+
+flutter…今回の主役。モバイルアプリ作成のために必要。
+
+firebase…ミドルウェアに採択。DBと自動翻訳のAPIのために必要。
+
+
+
 
 ## 環境構築
 
 ※flutterでAndroidのシミュレーターが確認できる方はflutterの項目を飛ばしてください※
-
-※以下の内容に沿っても環境構築できない方はfreelancer@y-onishi.netまでご連絡をお願いします※
 
 
 
@@ -206,6 +220,7 @@ flutter doctor --android-licenses
 1. firebaseの登録
 2. データベースの作成
 3. firebase extentionsの登録
+4. アプリ登録
 
 #### 1,firebaseの登録
 
@@ -237,11 +252,11 @@ Googleアナリティクスを有効にするにチェックを入れ続行を�
 
 ②「Database」を押下。
 
-③「Databaseの作成」を押下。
+③「データベースの作成」を押下。
 
 ④テストモードで開始にチェックを入れ「次へ」を押下。
 
-⑤Cloud Firestore のロケーション をasia-northeast-1にして「完了」を押下。
+⑤Cloud Firestore のロケーション をasia-northeast1にして「完了」を押下。
 
 
 
@@ -259,12 +274,72 @@ Googleアナリティクスを有効にするにチェックを入れ続行を�
 
 ⑤指示に従ってお支払い情報を入力する。
 
-⑥以下の画像のように設定を登録。
 
 
+#### 4,アプリ登録
+
+①Project Overviewの「Android」を押下し、Androidを選択。
+
+※次回以降はProject Overview上部の「アプリ追加」を押下し、Androidを選択。
+
+②Androidパッケージ名に「com.example.dictionary」と入力し「登録」を押下。
+
+③google.service.jsonをダウンロードする。
+
+
+
+
+
+## サンプルアプリ起動
+
+1. git clone
+2. Get dependencies
+3. gradle sync
+4. エミュレータ起動
+5. アプリ起動
+
+
+
+#### 1,git clone
+
+①以下リポジトリをクローン
+https://github.com/YujiOnishi/dictionary_hands_on_hinagata.git
+
+
+
+#### 2, Get dependencies
+
+①AndroidStudioで「dictionary_hands_on_hinagata」フォルダを開く
+
+②「dictionary_hands_on_hinagata/lib/main.dart」を開くと上部にGet dependencyと表示されているはずなので押下。
+
+
+
+#### 3,gradle sync
+
+①firebaseの設定項目でダウンロードしたgoogle.service.jsonを「dictionary_hands_on_hinagata/android/app」に移動。
+
+②AndroidStudioで「dictionary_hands_on_hinagata/android」フォルダを開くと自動でgradle syncが始まる
+
+
+
+
+
+#### 4,エミュレータ起動
+
+①AndroidStudioで「dictionary_hands_on_hinagata」フォルダを開く
+
+②AVDマネージャーから作成したエミュレータを起動する
+
+
+
+#### 5,アプリ起動
+
+①上部の再生ボタンを押下しアプリを起動。
+※結構時間がかかります※
 
 
 
 ## 困ったら…
 
- [公式ドキュメントを読みましょう](http://flutter.io/)
+ [公式ドキュメントを読みましょう](http://flutter.io/)http://flutter.io/)
