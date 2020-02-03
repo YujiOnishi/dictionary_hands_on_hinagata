@@ -258,6 +258,23 @@ Googleアナリティクスを有効にするにチェックを入れ続行を�
 
 ⑤Cloud Firestore のロケーション をasia-northeast1にして「完了」を押下。
 
+---------------以下2020/2/3追記---------------
+
+⑥「インデックス」を押下
+
+⑦「インデックスを追加」を押下し
+
+⑧以下の設定を行いインデックスを作成。
+
+コレクションID→dictionary
+
+フィールドのパス1→word,Ascending
+
+フィールドのパス2→created_at,Descending
+
+クエリのスコープ→コレクション
+
+---------------------------------------------
 
 
 #### 3,firebase extentionsの登録
@@ -275,7 +292,6 @@ Googleアナリティクスを有効にするにチェックを入れ続行を�
 ⑤指示に従ってお支払い情報を入力する。
 
 
-
 #### 4,アプリ登録
 
 ①Project Overviewの「Android」を押下し、Androidを選択。
@@ -288,7 +304,22 @@ Googleアナリティクスを有効にするにチェックを入れ続行を�
 
 
 
+---------------以下2020/2/3追記---------------
 
+#### 5,translate textのインストール
+①作成したプロジェクトページを開いてサイドメニューの「extentions」を押下。
+
+②Translate Textを探してインストール。
+
+③translation language for～の設定を「en,ja」に設定。（frやesなどをプラスしても問題ありません）
+
+④collection pathを「dictionary」と設定。
+
+⑤input fieldnameを「word」と設定。
+
+⑥output fieldnameを「translated」と設定。
+
+---------------------------------------------
 
 ## サンプルアプリ起動
 
